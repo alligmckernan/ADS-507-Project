@@ -44,37 +44,7 @@ Travel-Ticket-Cancellation-Risk-Pipeline/
 └── requirements.txt   # List of dependencies
 ```
 
----
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/Travel-Ticket-Cancellation-Risk-Pipeline.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Travel-Ticket-Cancellation-Risk-Pipeline
-   ```
-3. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
----
-
-## Usage
-1. **Run ETL Pipeline**: Execute the script to process raw data.
-   ```bash
-   python scripts/etl_pipeline.py
-   ```
-2. **Train Prediction Model**: Train the model on processed data.
-   ```bash
-   python scripts/train_model.py
-   ```
-3. **Launch Dashboard**: Start the visualization dashboard.
-   ```bash
-   python dashboard/app.py
-   ```
 
 ---
 
