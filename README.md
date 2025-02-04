@@ -1,59 +1,58 @@
-# Travel Ticket Cancellation Risk Pipeline
+# Movie Data Analysis Project
 
 ## Team Members
 1. **Niat Kahsay**
 2. **Allison McKernan**
 3. **Gabriel Duffy**
 
----
-
 ## Project Overview
+This project aims to analyze and compare data from multiple movie databases, including IMDB, Netflix, and a large dataset of 58,000 popular movies. By merging and preprocessing these datasets, we can uncover insights about movie ratings, trends, genres, and other key attributes.
 
-### Title
-**Travel Ticket Cancellation Risk Pipeline**
+## Datasets Used
+### 1. [Popular Movies Dataset (58,000+ Movies)](https://www.kaggle.com/datasets/whenamancodes/popular-movies-datasets-58000-movies)
+   - Contains metadata for over 58,000 movies.
+   - Includes details such as title, release year, genre, budget, revenue, and more.
+   
+### 2. [IMDB Top 250 Movies](https://www.kaggle.com/datasets/rajugc/imdb-top-250-movies-dataset)
+   - Lists the top 250 movies from IMDB.
+   - Features include movie rank, title, release year, rating, votes, genre, director, and more.
 
-### Description
-This project focuses on building a **production-ready ETL (Extract, Transform, Load) pipeline** to analyze travel ticket data and predict the likelihood of ticket cancellations. By leveraging the provided dataset, which contains information on ticket purchases, travel patterns, and historical cancellations, our pipeline aims to transform raw data into actionable insights.
+### 3. [Netflix Movies Dataset](https://www.kaggle.com/datasets/danghuutri/netflix-movies)
+   - Contains a list of movies available on Netflix.
+   - Includes information like title, genre, director, cast, release date, duration, and country of origin.
 
-### Objectives
-1. **Cancellation Prediction**: Develop a reliable model to predict ticket cancellations based on historical and current data.
-2. **Data Processing**: Implement an efficient ETL pipeline to process and transform raw data into usable formats.
-3. **Risk Management Tools**: Create a visual dashboard or notification system for monitoring cancellation risks in real time.
-4. **Insight Generation**: Identify trends and key factors influencing cancellations to support decision-making and improve customer experiences.
+## Preprocessing Steps
+1. **Data Cleaning:**
+   - Handling missing values and duplicate entries.
+   - Standardizing date formats and numerical values.
+   
+2. **Feature Engineering:**
+   - Extracting relevant features such as movie duration in minutes.
+   - Standardizing currency values for budget and revenue.
+   
+3. **Data Merging:**
+   - Combining datasets based on common fields such as movie title and release year.
+   - Handling variations in naming conventions.
+   
+4. **Exploratory Data Analysis (EDA):**
+   - Visualizing trends in movie ratings, budget, and box office revenue.
+   - Comparing IMDB, Netflix, and general movie trends.
+   
+## How to Use
+1. Download the datasets from the provided links.
+2. Run the preprocessing script (`data_preprocessing.py`) to clean and merge the datasets.
+3. Use the analysis notebooks (`movie_analysis.ipynb`) to explore trends and insights.
+4. Generate visualizations using tools like Matplotlib and Seaborn.
 
----
+## Requirements
+- Python 3.x
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Jupyter Notebook (for interactive analysis)
 
-## Features
-- **ETL Pipeline**: Automates data extraction, transformation, and loading processes.
-- **Prediction Model**: Uses machine learning algorithms to analyze ticket data and predict cancellation probabilities.
-- **Visualization Dashboard**: Displays key metrics and insights, enabling effective risk monitoring.
-- **Actionable Insights**: Highlights patterns in cancellation behavior to inform operational and strategic decisions.
-
----
-
-## Project Structure
-```
-Travel-Ticket-Cancellation-Risk-Pipeline/
-|
-├── data/              # Raw and processed datasets
-├── notebooks/         # Jupyter notebooks for exploratory data analysis (EDA)
-├── scripts/           # Python scripts for ETL and modeling
-├── models/            # Trained models and evaluation metrics
-├── dashboard/         # Code for visualization and notification systems
-├── README.md          # Project documentation
-└── requirements.txt   # List of dependencies
-```
-
-
-
----
-
-## Dataset
-The dataset includes:
-- Ticket purchase details
-- Travel patterns (e.g., destinations, times, etc.)
-- Cancellation statuses
-
----
-
-
+## Future Enhancements
+- Sentiment analysis on user reviews.
+- Predictive modeling for movie success based on past trends.
+- Recommendation system based on user preferences.
