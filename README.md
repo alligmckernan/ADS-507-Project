@@ -1,59 +1,70 @@
-# Travel Ticket Cancellation Risk Pipeline
+# 🎥 Movie Recommendation System  
 
-## Team Members
-1. **Niat Kahsay**
-2. **Allison McKernan**
-3. **Gabriel Duffy**
-
----
-
-## Project Overview
-
-### Title
-**Travel Ticket Cancellation Risk Pipeline**
-
-### Description
-This project focuses on building a **production-ready ETL (Extract, Transform, Load) pipeline** to analyze travel ticket data and predict the likelihood of ticket cancellations. By leveraging the provided dataset, which contains information on ticket purchases, travel patterns, and historical cancellations, our pipeline aims to transform raw data into actionable insights.
-
-### Objectives
-1. **Cancellation Prediction**: Develop a reliable model to predict ticket cancellations based on historical and current data.
-2. **Data Processing**: Implement an efficient ETL pipeline to process and transform raw data into usable formats.
-3. **Risk Management Tools**: Create a visual dashboard or notification system for monitoring cancellation risks in real time.
-4. **Insight Generation**: Identify trends and key factors influencing cancellations to support decision-making and improve customer experiences.
+**Team Members**:  
+- **Niat Kahsay**  
+- **Allison McKernan**  
+- **Gabriel Duffy**  
 
 ---
 
-## Features
-- **ETL Pipeline**: Automates data extraction, transformation, and loading processes.
-- **Prediction Model**: Uses machine learning algorithms to analyze ticket data and predict cancellation probabilities.
-- **Visualization Dashboard**: Displays key metrics and insights, enabling effective risk monitoring.
-- **Actionable Insights**: Highlights patterns in cancellation behavior to inform operational and strategic decisions.
+## 🚀 Overview  
+
+This project builds an **ETL pipeline** to process and analyze movie ratings, metadata, and Oscar awards data, ultimately generating personalized movie recommendations. The system leverages collaborative filtering techniques and a user-friendly dashboard to deliver insightful and engaging recommendations.  
+
+### 🌟 Key Features  
+- **Data Integration**: Combines information from **MovieLens**, **Kaggle**, and **Oscar Awards** datasets for comprehensive analysis.  
+- **Recommendation Algorithm**: Implements collaborative filtering to deliver tailored movie suggestions based on user preferences.  
+- **Visual Dashboard**: Interactive dashboard showcasing trends, analytics, and award-winning films for an enhanced user experience.  
+- **Awards Insights**: Highlights Oscar-winning films to enrich the recommendation process.  
 
 ---
 
-## Project Structure
-```
-Travel-Ticket-Cancellation-Risk-Pipeline/
-|
-├── data/              # Raw and processed datasets
-├── notebooks/         # Jupyter notebooks for exploratory data analysis (EDA)
-├── scripts/           # Python scripts for ETL and modeling
-├── models/            # Trained models and evaluation metrics
-├── dashboard/         # Code for visualization and notification systems
-├── README.md          # Project documentation
-└── requirements.txt   # List of dependencies
-```
+## Datasets Used
+### 1. [Popular Movies Dataset (58,000+ Movies)](https://www.kaggle.com/datasets/whenamancodes/popular-movies-datasets-58000-movies)
+   - Contains metadata for over 58,000 movies.
+   - Includes details such as title, release year, genre, budget, revenue, and more.
+   
+### 2. [IMDB Top 250 Movies](https://www.kaggle.com/datasets/rajugc/imdb-top-250-movies-dataset)
+   - Lists the top 250 movies from IMDB.
+   - Features include movie rank, title, release year, rating, votes, genre, director, and more.
 
+### 3. [Netflix Movies Dataset](https://www.kaggle.com/datasets/danghuutri/netflix-movies)
+   - Contains a list of movies available on Netflix.
+   - Includes information like title, genre, director, cast, release date, duration, and country of origin.
 
+## 🛠️ Tools & Technologies  
 
----
-
-## Dataset
-The dataset includes:
-- Ticket purchase details
-- Travel patterns (e.g., destinations, times, etc.)
-- Cancellation statuses
+- **Programming Languages**: Python  
+- **Libraries**: Pandas, NumPy, SciKit-Learn, Matplotlib, Seaborn  
+- **Dashboard Framework**: Streamlit / Dash  
+- **Database**: PostgreSQL / SQLite (for data storage and querying)  
+- **Pipeline Orchestration**: Apache Airflow / Prefect  
 
 ---
 
+## 📂 Project Workflow  
 
+1. **Data Extraction**:  
+   - Retrieve data from the MovieLens, Kaggle, and Oscar Awards sources.  
+
+2. **Data Transformation**:  
+   - Clean and preprocess datasets (e.g., handling missing values, standardizing formats).  
+   - Enrich movie metadata with award insights for better recommendations.  
+
+3. **Data Loading**:  
+   - Load cleaned datasets into a relational database for querying and analysis.  
+
+4. **Recommendation System**:  
+   - Build and train a collaborative filtering model to generate personalized recommendations.  
+
+5. **Visualization Dashboard**:  
+   - Create an interactive interface to display recommendations, trends, and insights.  
+
+---
+
+## 📈 Results & Insights  
+
+- **User Preferences**: Analyze user ratings to uncover popular genres and preferences.  
+- **Award-winning Films**: Highlight the impact of Oscar wins on movie popularity and recommendations.  
+
+---
